@@ -53,6 +53,11 @@
             padding: 20px;
         }
 
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
         input[type="text"], textarea {
             width: 100%;
             padding: 10px;
@@ -96,10 +101,13 @@
 
     <form>
         <h2>Contact Us</h2>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <button>Submit</button>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Enter your message" required></textarea>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
